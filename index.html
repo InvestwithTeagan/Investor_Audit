@@ -1,448 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Performance Audit</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A complimentary property investor performance audit.">
+  <title>Property Performance Audit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Dark Mode Toggle -->
-    <div class="dark-mode-toggle">
-        <button id="darkModeBtn" class="dark-mode-button" aria-label="Toggle dark mode">
-            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-        </button>
-    </div>
+  <main class="site-shell">
+    <header class="brand-bar">
+      <div>
+        <p class="brand-name">Property Performance Audit</p>
+        <p class="brand-subtitle">For Australian property investors</p>
+      </div>
+      <span class="brand-mark" aria-hidden="true">✓</span>
+    </header>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Welcome Section -->
-        <section id="welcomeSection" class="section welcome-section">
-            <div class="welcome-content">
-                <h1 class="welcome-title">Is Your Investment Property Working As Hard As It Could?</h1>
-                <p class="welcome-subtitle">Complete this complimentary five-minute audit to discover:</p>
-                
-                <ul class="benefit-list">
-                    <li>
-                        <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
-                        Rental performance
-                    </li>
-                    <li>
-                        <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                        Tenant appeal
-                    </li>
-                    <li>
-                        <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        </svg>
-                        Property presentation
-                    </li>
-                    <li>
-                        <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
-                        </svg>
-                        Maintenance health
-                    </li>
-                    <li>
-                        <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                            <polyline points="13 2 13 9 20 9"></polyline>
-                        </svg>
-                        Investment opportunities
-                    </li>
-                </ul>
+    <section id="welcomeScreen" class="screen active">
+      <div class="hero">
+        <p class="eyebrow">Complimentary 5-minute audit</p>
+        <h1>Is your investment property working as hard as it could?</h1>
+        <p class="hero-copy">
+          Review your rental performance, presentation, tenant appeal,
+          maintenance and investment planning, then receive an instant
+          Property Performance Score.
+        </p>
 
-                <button id="startAuditBtn" class="btn btn-primary btn-lg">
-                    Start My Audit
-                </button>
-            </div>
+        <div class="benefit-grid">
+          <div class="benefit-card"><strong>Rental performance</strong><span>Review rent, vacancy and demand.</span></div>
+          <div class="benefit-card"><strong>Tenant appeal</strong><span>Identify features renters value.</span></div>
+          <div class="benefit-card"><strong>Property health</strong><span>Check maintenance and compliance.</span></div>
+          <div class="benefit-card"><strong>Future planning</strong><span>Review insurance, equity and strategy.</span></div>
+        </div>
+
+        <button id="startButton" class="primary-button" type="button">Start My Free Audit</button>
+        <p class="small-note">No login required. Your answers stay in your browser.</p>
+      </div>
+    </section>
+
+    <section id="auditScreen" class="screen">
+      <div class="progress-wrap" aria-label="Audit progress">
+        <div class="progress-meta">
+          <span id="stepLabel">Step 1 of 6</span>
+          <span id="progressPercent">17% complete</span>
+        </div>
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <form id="auditForm" novalidate>
+        <section class="audit-step active" data-step="0">
+          <p class="eyebrow">Property details</p>
+          <h2>Tell us about your investment</h2>
+          <p class="section-intro">These figures are used for your indicative rental calculations.</p>
+
+          <div class="field-grid">
+            <label>
+              Property suburb
+              <input id="suburb" type="text" placeholder="e.g. Springfield Lakes">
+            </label>
+
+            <label>
+              Current weekly rent ($)
+              <input id="currentRent" type="number" min="0" step="1" placeholder="650" required>
+            </label>
+
+            <label>
+              Estimated market rent ($)
+              <input id="marketRent" type="number" min="0" step="1" placeholder="675" required>
+            </label>
+
+            <label>
+              Estimated property value ($)
+              <input id="propertyValue" type="number" min="1" step="1000" placeholder="750000" required>
+            </label>
+
+            <label>
+              Vacancy days in the past 12 months
+              <input id="vacancyDays" type="number" min="0" max="365" step="1" placeholder="14" required>
+            </label>
+          </div>
+
+          <p id="detailsError" class="error-message" role="alert"></p>
         </section>
 
-        <!-- Audit Form Section -->
-        <section id="auditSection" class="section audit-section hidden">
-            <!-- Progress Bar -->
-            <div class="progress-container">
-                <div class="progress-info">
-                    <span id="questionNumber" class="question-number">Question 1 of 25</span>
-                    <span id="percentComplete" class="percent-complete">4% Complete</span>
-                </div>
-                <div class="progress-bar">
-                    <div id="progressFill" class="progress-fill"></div>
-                </div>
-            </div>
+        <section class="audit-step" data-step="1">
+          <p class="eyebrow">Section 1</p>
+          <h2>Rental performance</h2>
+          <p class="section-intro">Consider how closely the property is keeping pace with the current market.</p>
 
-            <!-- Form Questions -->
-            <form id="auditForm" class="audit-form">
-                <!-- Section 1: Property Details -->
-                <fieldset class="form-section" data-section="1">
-                    <legend class="section-title">
-                        <span class="section-icon">🏠</span>
-                        Section 1: Property Details
-                    </legend>
+          <fieldset class="question" data-category="rental">
+            <legend>When was the rent last reviewed?</legend>
+            <label class="answer"><input type="radio" name="rentReview" value="5" required><span>Within the past 6 months</span></label>
+            <label class="answer"><input type="radio" name="rentReview" value="3"><span>6 to 12 months ago</span></label>
+            <label class="answer"><input type="radio" name="rentReview" value="0"><span>More than 12 months ago</span></label>
+            <label class="answer"><input type="radio" name="rentReview" value="1"><span>I am unsure</span></label>
+          </fieldset>
 
-                    <div class="form-group">
-                        <label for="propertySuburb">Property Suburb</label>
-                        <input type="text" id="propertySuburb" name="propertySuburb" required>
-                    </div>
+          <fieldset class="question" data-category="rental">
+            <legend>At the last changeover, how quickly was the property leased?</legend>
+            <label class="answer"><input type="radio" name="leaseTime" value="5" required><span>Within 14 days</span></label>
+            <label class="answer"><input type="radio" name="leaseTime" value="3"><span>15 to 21 days</span></label>
+            <label class="answer"><input type="radio" name="leaseTime" value="0"><span>More than 21 days</span></label>
+            <label class="answer"><input type="radio" name="leaseTime" value="1"><span>I am unsure</span></label>
+          </fieldset>
 
-                    <div class="form-group">
-                        <label for="currentWeeklyRent">Current Weekly Rent ($)</label>
-                        <input type="number" id="currentWeeklyRent" name="currentWeeklyRent" step="10" required>
-                    </div>
+          <fieldset class="question" data-category="rental">
+            <legend>Did the last campaign attract multiple suitable applications?</legend>
+            <label class="answer"><input type="radio" name="applications" value="5" required><span>Yes, multiple suitable applications</span></label>
+            <label class="answer"><input type="radio" name="applications" value="3"><span>One suitable application</span></label>
+            <label class="answer"><input type="radio" name="applications" value="0"><span>No suitable applications initially</span></label>
+            <label class="answer"><input type="radio" name="applications" value="1"><span>I am unsure</span></label>
+          </fieldset>
 
-                    <div class="form-group">
-                        <label for="estimatedMarketRent">Estimated Market Rent ($)</label>
-                        <input type="number" id="estimatedMarketRent" name="estimatedMarketRent" step="10" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="propertyValue">Estimated Property Value ($)</label>
-                        <input type="number" id="propertyValue" name="propertyValue" step="1000" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="vacancyDays">Vacancy Days (past 12 months)</label>
-                        <input type="number" id="vacancyDays" name="vacancyDays" min="0" required>
-                    </div>
-                </fieldset>
-
-                <!-- Section 2: Rental Performance -->
-                <fieldset class="form-section" data-section="2">
-                    <legend class="section-title">
-                        <span class="section-icon">📊</span>
-                        Section 2: Rental Performance
-                    </legend>
-
-                    <div class="form-group">
-                        <label>When was your rent last reviewed?</label>
-                        <div class="radio-group">
-                            <label class="radio-option">
-                                <input type="radio" name="rentReview" value="within6" required>
-                                <span>Within 6 months</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="rentReview" value="6to12" required>
-                                <span>6-12 months</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="rentReview" value="over12" required>
-                                <span>Over 12 months</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="rentReview" value="unsure" required>
-                                <span>Unsure</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Did your last tenancy lease within 14 days?</label>
-                        <div class="radio-group">
-                            <label class="radio-option">
-                                <input type="radio" name="tenancyLease" value="yes" required>
-                                <span>Yes</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="tenancyLease" value="15to21" required>
-                                <span>15-21 days</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="tenancyLease" value="over21" required>
-                                <span>Over 21 days</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="tenancyLease" value="unsure" required>
-                                <span>Unsure</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Did you receive multiple applications?</label>
-                        <div class="radio-group">
-                            <label class="radio-option">
-                                <input type="radio" name="multipleApplications" value="yes" required>
-                                <span>Yes</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="multipleApplications" value="one" required>
-                                <span>One application</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="multipleApplications" value="no" required>
-                                <span>No</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="multipleApplications" value="unsure" required>
-                                <span>Unsure</span>
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-
-                <!-- Section 3: Property Presentation -->
-                <fieldset class="form-section" data-section="3">
-                    <legend class="section-title">
-                        <span class="section-icon">✨</span>
-                        Section 3: Property Presentation
-                    </legend>
-
-                    <div class="checkbox-group">
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="presentation" value="photography">
-                            <span>Professional photography?</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="presentation" value="streetAppeal">
-                            <span>Excellent street appeal?</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="presentation" value="flooring">
-                            <span>Modern flooring?</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="presentation" value="paint">
-                            <span>Fresh paint?</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="presentation" value="lighting">
-                            <span>Modern lighting?</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="presentation" value="furnishings">
-                            <span>Window furnishings in good condition?</span>
-                        </label>
-                    </div>
-                </fieldset>
-
-                <!-- Section 4: Tenant Appeal -->
-                <fieldset class="form-section" data-section="4">
-                    <legend class="section-title">
-                        <span class="section-icon">👥</span>
-                        Section 4: Tenant Appeal
-                    </legend>
-
-                    <div class="checkbox-group">
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="tenantAppeal" value="aircon">
-                            <span>Air conditioning</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="tenantAppeal" value="fans">
-                            <span>Ceiling fans</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="tenantAppeal" value="dishwasher">
-                            <span>Dishwasher</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="tenantAppeal" value="outdoor">
-                            <span>Outdoor entertaining</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="tenantAppeal" value="screens">
-                            <span>Security screens</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="tenantAppeal" value="storage">
-                            <span>Storage</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="tenantAppeal" value="garage">
-                            <span>Garage</span>
-                        </label>
-                    </div>
-                </fieldset>
-
-                <!-- Section 5: Maintenance -->
-                <fieldset class="form-section" data-section="5">
-                    <legend class="section-title">
-                        <span class="section-icon">🔧</span>
-                        Section 5: Maintenance
-                    </legend>
-
-                    <div class="checkbox-group">
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="maintenance" value="smokeAlarms">
-                            <span>Smoke alarms compliant</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="maintenance" value="waterEfficiency">
-                            <span>Water efficiency certificate</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="maintenance" value="preventative">
-                            <span>Recent preventative maintenance</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="maintenance" value="outstandingRepairs">
-                            <span>No outstanding repairs</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="maintenance" value="insurance">
-                            <span>Landlord insurance reviewed</span>
-                        </label>
-                    </div>
-                </fieldset>
-
-                <!-- Section 6: Future Planning -->
-                <fieldset class="form-section" data-section="6">
-                    <legend class="section-title">
-                        <span class="section-icon">🎯</span>
-                        Section 6: Future Planning
-                    </legend>
-
-                    <div class="checkbox-group">
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="futurePlanning" value="depreciation">
-                            <span>Depreciation schedule completed</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="futurePlanning" value="brokerReview">
-                            <span>Broker review completed</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="futurePlanning" value="equityReview">
-                            <span>Equity review completed</span>
-                        </label>
-                        <label class="checkbox-option">
-                            <input type="checkbox" name="futurePlanning" value="investmentPlans">
-                            <span>Future investment plans documented</span>
-                        </label>
-                    </div>
-                </fieldset>
-
-                <!-- Form Actions -->
-                <div class="form-actions">
-                    <button type="button" id="prevBtn" class="btn btn-secondary">Previous</button>
-                    <button type="button" id="nextBtn" class="btn btn-primary">Next</button>
-                    <button type="submit" id="submitBtn" class="btn btn-primary hidden">Complete Audit</button>
-                </div>
-            </form>
+          <fieldset class="question" data-category="rental">
+            <legend>Is the current rent close to the estimated market rent?</legend>
+            <label class="answer"><input type="radio" name="marketPosition" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="marketPosition" value="3"><span>Within $10 per week</span></label>
+            <label class="answer"><input type="radio" name="marketPosition" value="0"><span>More than $10 below market</span></label>
+            <label class="answer"><input type="radio" name="marketPosition" value="1"><span>I am unsure</span></label>
+          </fieldset>
         </section>
 
-        <!-- Results Section -->
-        <section id="resultsSection" class="section results-section hidden">
-            <!-- Score Circle -->
-            <div class="score-container">
-                <div class="score-circle">
-                    <svg viewBox="0 0 200 200" class="score-svg">
-                        <circle class="score-circle-background" cx="100" cy="100" r="90"/>
-                        <circle class="score-circle-progress" cx="100" cy="100" r="90"/>
-                    </svg>
-                    <div class="score-text">
-                        <span id="scoreValue" class="score-value">0</span>
-                        <span class="score-max">/100</span>
-                    </div>
-                </div>
-                <div id="starRating" class="star-rating"></div>
-            </div>
+        <section class="audit-step" data-step="2">
+          <p class="eyebrow">Section 2</p>
+          <h2>Property presentation</h2>
+          <p class="section-intro">Good presentation can improve enquiry quality and reduce vacancy.</p>
 
-            <!-- Property Performance Cards -->
-            <div class="performance-cards">
-                <div id="performanceCard" class="performance-card">
-                    <h3>Property Performance</h3>
-                    <p id="performanceRating" class="rating">Excellent</p>
-                </div>
+          <div class="question-list">
+            <fieldset class="question compact" data-category="presentation">
+              <legend>Does the property have professional advertising photography?</legend>
+              <label class="answer"><input type="radio" name="photos" value="5" required><span>Yes</span></label>
+              <label class="answer"><input type="radio" name="photos" value="3"><span>Older professional photos</span></label>
+              <label class="answer"><input type="radio" name="photos" value="0"><span>No</span></label>
+              <label class="answer"><input type="radio" name="photos" value="1"><span>Unsure</span></label>
+            </fieldset>
 
-                <div class="metrics-grid">
-                    <div class="metric-card">
-                        <span class="metric-label">Rental Yield</span>
-                        <span id="rentalYield" class="metric-value">4.82%</span>
-                    </div>
-                    <div class="metric-card">
-                        <span class="metric-label">Potential Annual Increase</span>
-                        <span id="potentialIncrease" class="metric-value">$1,300</span>
-                    </div>
-                    <div class="metric-card">
-                        <span class="metric-label">Vacancy Cost</span>
-                        <span id="vacancyCost" class="metric-value">$1,950</span>
-                    </div>
-                </div>
-            </div>
+            <fieldset class="question compact" data-category="presentation">
+              <legend>Are the paintwork and flooring in good condition?</legend>
+              <label class="answer"><input type="radio" name="paintFloor" value="5" required><span>Yes</span></label>
+              <label class="answer"><input type="radio" name="paintFloor" value="3"><span>Mostly</span></label>
+              <label class="answer"><input type="radio" name="paintFloor" value="0"><span>Needs attention</span></label>
+              <label class="answer"><input type="radio" name="paintFloor" value="1"><span>Unsure</span></label>
+            </fieldset>
 
-            <!-- Category Scores -->
-            <div class="category-scores">
-                <h3>Category Breakdown</h3>
-                <div id="categoryBars" class="category-bars"></div>
-            </div>
+            <fieldset class="question compact" data-category="presentation">
+              <legend>Are the gardens and exterior easy to maintain and well presented?</legend>
+              <label class="answer"><input type="radio" name="gardens" value="5" required><span>Yes</span></label>
+              <label class="answer"><input type="radio" name="gardens" value="3"><span>Mostly</span></label>
+              <label class="answer"><input type="radio" name="gardens" value="0"><span>Needs attention</span></label>
+              <label class="answer"><input type="radio" name="gardens" value="1"><span>Unsure</span></label>
+            </fieldset>
 
-            <!-- Radar Chart -->
-            <div class="chart-container">
-                <h3>Performance Overview</h3>
-                <svg id="radarChart" class="radar-chart" viewBox="0 0 400 400"></svg>
-            </div>
-
-            <!-- Recommendations -->
-            <div class="recommendations">
-                <h3>Top Recommendations</h3>
-                <div id="recommendationsList" class="recommendations-list"></div>
-            </div>
-
-            <!-- Summary -->
-            <div class="summary-container">
-                <h2 id="summaryTitle">Congratulations!</h2>
-                <p id="summaryText" class="summary-text"></p>
-            </div>
-
-            <!-- Next Steps -->
-            <div class="next-steps-card">
-                <h3>Would you like a complimentary Property Performance Review?</h3>
-                <p>Book a complimentary strategy session with Teagan Turner to discuss your audit.</p>
-                <button id="bookReviewBtn" class="btn btn-primary">Book My Review</button>
-            </div>
-
-            <!-- Results Actions -->
-            <div class="results-actions">
-                <button id="restartBtn" class="btn btn-secondary">Restart Audit</button>
-                <button id="printBtn" class="btn btn-secondary">Print Results</button>
-                <button id="downloadBtn" class="btn btn-secondary">Download PDF</button>
-            </div>
+            <fieldset class="question compact" data-category="presentation">
+              <legend>Are the lighting and window coverings modern and functional?</legend>
+              <label class="answer"><input type="radio" name="lighting" value="5" required><span>Yes</span></label>
+              <label class="answer"><input type="radio" name="lighting" value="3"><span>Mostly</span></label>
+              <label class="answer"><input type="radio" name="lighting" value="0"><span>Needs attention</span></label>
+              <label class="answer"><input type="radio" name="lighting" value="1"><span>Unsure</span></label>
+            </fieldset>
+          </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Investment Property Consultant</h4>
-                    <p><strong>Teagan Turner</strong></p>
-                    <p>Ray White Springfield</p>
-                </div>
-                <div class="footer-contact">
-                    <p>📧 <a href="mailto:teagan@raywhitespringfield.com">teagan@raywhitespringfield.com</a></p>
-                    <p>📱 <a href="tel:+61123456789">+61 1 2345 6789</a></p>
-                    <p>🌐 <a href="https://raywhitespringfield.com" target="_blank">raywhitespringfield.com</a></p>
-                </div>
-            </div>
-            <div class="footer-disclaimer">
-                <p><strong>Disclaimer:</strong> This calculator provides general information only and should not be considered financial, taxation or legal advice.</p>
-            </div>
-        </footer>
-    </div>
+        <section class="audit-step" data-step="3">
+          <p class="eyebrow">Section 3</p>
+          <h2>Tenant appeal</h2>
+          <p class="section-intro">Select whether the property includes each feature.</p>
 
-    <!-- Confetti Canvas (for scores > 90) -->
-    <canvas id="confetti"></canvas>
+          <div class="feature-grid">
+            <fieldset class="question compact" data-category="appeal">
+              <legend>Air conditioning</legend>
+              <label class="answer"><input type="radio" name="aircon" value="5" required><span>Yes</span></label>
+              <label class="answer"><input type="radio" name="aircon" value="0"><span>No</span></label>
+              <label class="answer"><input type="radio" name="aircon" value="3"><span>Not applicable</span></label>
+            </fieldset>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+            <fieldset class="question compact" data-category="appeal">
+              <legend>Ceiling fans</legend>
+              <label class="answer"><input type="radio" name="fans" value="5" required><span>Yes</span></label>
+              <label class="answer"><input type="radio" name="fans" value="0"><span>No</span></label>
+              <label class="answer"><input type="radio" name="fans" value="3"><span>Not applicable</span></label>
+            </fieldset>
+
+            <fieldset class="question compact" data-category="appeal">
+              <legend>Dishwasher</legend>
+              <label class="answer"><input type="radio" name="dishwasher" value="5" required><span>Yes</span></label>
+              <label class="answer"><input type="radio" name="dishwasher" value="0"><span>No</span></label>
+              <label class="answer"><input type="radio" name="dishwasher" value="3"><span>Not applicable</span></label>
+            </fieldset>
+
+            <fieldset class="question compact" data-category="appeal">
+              <legend>Security screens</legend>
+              <label class="answer"><input type="radio" name="screens" value="5" required><span>Yes</span></label>
+              <label class="answer"><input type="radio" name="screens" value="0"><span>No</span></label>
+              <label class="answer"><input type="radio" name="screens" value="3"><span>Not applicable</span></label>
+            </fieldset>
+          </div>
+        </section>
+
+        <section class="audit-step" data-step="4">
+          <p class="eyebrow">Section 4</p>
+          <h2>Maintenance and compliance</h2>
+          <p class="section-intro">This section helps identify areas that may warrant further review.</p>
+
+          <fieldset class="question compact" data-category="maintenance">
+            <legend>Are smoke alarm requirements current?</legend>
+            <label class="answer"><input type="radio" name="smoke" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="smoke" value="3"><span>Being reviewed</span></label>
+            <label class="answer"><input type="radio" name="smoke" value="0"><span>No</span></label>
+            <label class="answer"><input type="radio" name="smoke" value="1"><span>Unsure</span></label>
+          </fieldset>
+
+          <fieldset class="question compact" data-category="maintenance">
+            <legend>Does the property have an applicable water-efficiency certificate?</legend>
+            <label class="answer"><input type="radio" name="water" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="water" value="3"><span>Not applicable</span></label>
+            <label class="answer"><input type="radio" name="water" value="0"><span>No</span></label>
+            <label class="answer"><input type="radio" name="water" value="1"><span>Unsure</span></label>
+          </fieldset>
+
+          <fieldset class="question compact" data-category="maintenance">
+            <legend>Are outstanding repairs addressed promptly?</legend>
+            <label class="answer"><input type="radio" name="repairs" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="repairs" value="3"><span>Usually</span></label>
+            <label class="answer"><input type="radio" name="repairs" value="0"><span>No</span></label>
+            <label class="answer"><input type="radio" name="repairs" value="1"><span>Unsure</span></label>
+          </fieldset>
+
+          <fieldset class="question compact" data-category="maintenance">
+            <legend>Has preventative maintenance been reviewed recently?</legend>
+            <label class="answer"><input type="radio" name="preventative" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="preventative" value="3"><span>Some items</span></label>
+            <label class="answer"><input type="radio" name="preventative" value="0"><span>No</span></label>
+            <label class="answer"><input type="radio" name="preventative" value="1"><span>Unsure</span></label>
+          </fieldset>
+        </section>
+
+        <section class="audit-step" data-step="5">
+          <p class="eyebrow">Section 5</p>
+          <h2>Investment planning</h2>
+          <p class="section-intro">Strong investments are reviewed as circumstances and markets change.</p>
+
+          <fieldset class="question compact" data-category="strategy">
+            <legend>Has landlord insurance been reviewed recently?</legend>
+            <label class="answer"><input type="radio" name="insurance" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="insurance" value="3"><span>More than 12 months ago</span></label>
+            <label class="answer"><input type="radio" name="insurance" value="0"><span>No</span></label>
+            <label class="answer"><input type="radio" name="insurance" value="1"><span>Unsure</span></label>
+          </fieldset>
+
+          <fieldset class="question compact" data-category="strategy">
+            <legend>Have depreciation opportunities been reviewed with a qualified adviser?</legend>
+            <label class="answer"><input type="radio" name="depreciation" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="depreciation" value="3"><span>Previously</span></label>
+            <label class="answer"><input type="radio" name="depreciation" value="0"><span>No</span></label>
+            <label class="answer"><input type="radio" name="depreciation" value="1"><span>Unsure</span></label>
+          </fieldset>
+
+          <fieldset class="question compact" data-category="strategy">
+            <legend>Has the property's equity position been reviewed recently?</legend>
+            <label class="answer"><input type="radio" name="equity" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="equity" value="3"><span>More than 12 months ago</span></label>
+            <label class="answer"><input type="radio" name="equity" value="0"><span>No</span></label>
+            <label class="answer"><input type="radio" name="equity" value="1"><span>Unsure</span></label>
+          </fieldset>
+
+          <fieldset class="question compact" data-category="strategy">
+            <legend>Are there clear plans for the property's next 12 to 24 months?</legend>
+            <label class="answer"><input type="radio" name="futurePlans" value="5" required><span>Yes</span></label>
+            <label class="answer"><input type="radio" name="futurePlans" value="3"><span>Somewhat</span></label>
+            <label class="answer"><input type="radio" name="futurePlans" value="0"><span>No</span></label>
+            <label class="answer"><input type="radio" name="futurePlans" value="1"><span>Unsure</span></label>
+          </fieldset>
+        </section>
+
+        <p id="questionError" class="error-message" role="alert"></p>
+
+        <div class="form-actions">
+          <button id="backButton" class="secondary-button" type="button">Back</button>
+          <button id="nextButton" class="primary-button" type="button">Continue</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="resultsScreen" class="screen">
+      <div class="results-header">
+        <p class="eyebrow">Your results</p>
+        <h2 id="resultHeading">Your Property Performance Score</h2>
+        <p id="resultSuburb" class="section-intro"></p>
+      </div>
+
+      <div class="score-panel">
+        <div class="score-circle">
+          <span id="scoreNumber">0</span>
+          <small>/ 100</small>
+        </div>
+        <div>
+          <span id="scoreBadge" class="status-badge">Calculating</span>
+          <p id="scoreSummary"></p>
+        </div>
+      </div>
+
+      <div class="metrics-grid">
+        <article class="metric-card">
+          <span>Estimated gross rental yield</span>
+          <strong id="yieldResult">0.00%</strong>
+        </article>
+        <article class="metric-card">
+          <span>Potential annual rental increase</span>
+          <strong id="increaseResult">$0</strong>
+        </article>
+        <article class="metric-card">
+          <span>Estimated vacancy cost</span>
+          <strong id="vacancyResult">$0</strong>
+        </article>
+      </div>
+
+      <section class="results-section">
+        <h3>Category scores</h3>
+        <div id="categoryScores"></div>
+      </section>
+
+      <section class="results-section recommendations">
+        <h3>Your three suggested next steps</h3>
+        <ol id="recommendationList"></ol>
+      </section>
+
+      <section class="review-card">
+        <div>
+          <p class="eyebrow">Complimentary review</p>
+          <h3>Would you like to discuss your results?</h3>
+          <p>
+            Request a more detailed rental market review and discuss potential
+            opportunities for your investment property.
+          </p>
+        </div>
+        <a id="reviewButton" class="primary-button link-button" href="#">Request My Review</a>
+      </section>
+
+      <div class="results-actions">
+        <button id="printButton" class="secondary-button" type="button">Print Results</button>
+        <button id="restartButton" class="primary-button" type="button">Restart Audit</button>
+      </div>
+
+      <p class="disclaimer">
+        This calculator provides general and indicative information based only
+        on the details entered. It is not a formal rental appraisal, valuation,
+        financial recommendation, taxation recommendation or guarantee of
+        future performance. Investors should obtain advice appropriate to their
+        circumstances from suitably qualified professionals.
+      </p>
+    </section>
+
+    <footer>
+      <strong>Teagan Turner</strong>
+      <span>Investment Property Consultant</span>
+      <span>Ray White Springfield &amp; Springfield Lakes</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
