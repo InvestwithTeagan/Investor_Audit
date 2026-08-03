@@ -257,7 +257,7 @@ function renderResults() {
     Replace the email address below with your correct business email address.
   */
   document.getElementById("reviewButton").href =
-    `mailto:teagan.turner@raywhite.com?subject=${subject}&body=${body}`;
+    `mailto:YOUR-EMAIL-ADDRESS@example.com?subject=${subject}&body=${body}`;
 }
 
 startButton.addEventListener("click", () => {

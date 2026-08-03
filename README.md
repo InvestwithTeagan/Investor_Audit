@@ -1,33 +1,29 @@
-# Property Investor Audit
+# Ray White Property Investor Audit
 
-A mobile-friendly property investor audit built with plain HTML, CSS and JavaScript.
+This version uses the supplied Ray White logo and the approved colour palette:
 
-## Files
+- White: `#ffffff`
+- Charcoal: `#595959`
+- Light grey: `#ebebec`
+- Yellow: `#ffe512`
+
+The font pairing uses Playfair Display for headings and DM Sans for body text, which closely matches the supplied brand examples while remaining suitable for a public website.
+
+## Upload to GitHub
+
+Upload these files to the root of your existing repository:
 
 - `index.html`
 - `style.css`
 - `script.js`
+- `ray-white-logo.png`
 
-## Before publishing
+Replace the existing files when GitHub asks.
 
-Open `script.js` and replace:
+## Email address
+
+Open `script.js` in GitHub and replace:
 
 `YOUR-EMAIL-ADDRESS@example.com`
 
 with your correct business email address.
-
-You can also edit the footer details in `index.html`.
-
-## Publish with GitHub Pages
-
-1. Create a new public GitHub repository.
-2. Upload all three files to the main/root area of the repository.
-3. Open **Settings**.
-4. Select **Pages**.
-5. Under **Build and deployment**, select **Deploy from a branch**.
-6. Choose the `main` branch and `/root`.
-7. Select **Save**.
-
-Your website will usually be available at:
-
-`https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-NAME/`
